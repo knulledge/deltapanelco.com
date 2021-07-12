@@ -1,3 +1,28 @@
 body {
     font-family: 'Vazir', sans-serif, var(--bs-font-sans-serif);
 }
+
+p, span, h1, h2, h3, h4, h5, h6 {
+    direction: rtl;
+}
+
+*[dir='ltr'] {
+    direction: ltr !important;
+}
+
+.banner-box {
+    border-radius: 36px;
+}
+
+#main-banner {
+    margin: 0 36px;
+}
+
+#main-banner-box {
+    background-color: #427be4;
+    width: 100%;
+    height: calc(100vh - 72px);
+    min-height: 36vw;
+    margin: 36px 0;
+    content: '';
+}
