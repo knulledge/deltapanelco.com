@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>دلتا پنل</title>
 
   <!-- font -->
@@ -42,7 +43,7 @@
   <link rel="stylesheet" href="res/css/style.css">
 </head>
 
-<body dir="rtl">
+<body>
   <!-- jquery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -55,8 +56,7 @@
     integrity="sha256-fh8VA992XMpeCZiRuU4xii75UIG6KvHrbUF8yIS/2/4=" crossorigin="anonymous"></script>
 
   <!-- bootstrap local fallback -->
-  <script>if (typeof ($.fn.modal) === 'undefined')
-      document.write('<script src="res/lib/bootstrap/bootstrap.bundle.min.js"><\/script>');</script>
+  <script>window.bootstrap || document.write('<script src="res/lib/bootstrap/bootstrap.bundle.min.js"><\/script>')</script>
 
   <!-- script -->
   <script src="res/js/main.js"></script>
