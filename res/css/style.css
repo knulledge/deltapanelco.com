@@ -15,8 +15,41 @@ nav.nav-row {
     transition: margin 250ms;
 }
 
+nav.nav-row div {
+    transition: flex 250ms;
+}
+
+.nav-space {
+    flex: 6;
+}
+
+.expand .nav-space {
+    flex: 0;
+}
+
 .navbar {
+    flex: 6;
     border-radius: 40px;
+    background-color: #427be4;
+}
+
+.navbar div {
+    transition: flex 250ms;
+}
+
+/* Should not use opacity */
+.navbar .nav-side {
+    opacity: 0;
+    flex: 0;
+}
+
+.navbar.expand .nav-side {
+    opacity: 1;
+    flex: 3;
+}
+
+.navbar .nav-center {
+    flex: 6;
 }
 
 .banner-box {

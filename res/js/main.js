@@ -10,7 +10,7 @@ $(function () {
     let $navbar = $('#navbar');
     let margin = parseVal($navbar.css('margin-top'));
 
-    $(document).scroll(function () {
+    let navScroll = function () {
         if ($(this).scrollTop() < margin.val / 1.5) {
             if ($(this).scrollTop() < 4) {
                 $navbar.css({
@@ -18,12 +18,27 @@ $(function () {
                     marginBottom: margin.val + margin.unit
                 });
             }
-        }
-        else {
+        } else {
             $navbar.css({
                 marginTop: (margin.val / 4) + margin.unit,
                 marginBottom: (margin.val / 4) + margin.unit
             });
         }
+
+        if ($(this).scrollTop() > $('#main-banner').height())
+            $('#navbar, #nav-content').addClass('expand');
+        else
+            $('#navbar, #nav-content').removeClass('expand');
+    };
+    navScroll();
+
+    $(document).scroll(function () {
+        navScroll();
     });
+
+    // Disable transition for 300ms.
+    // Because of navbar width and margin problem on refresh.
+    setTimeout(function () {
+        $('.remove').remove();
+    }, 300);
 });
