@@ -10,6 +10,15 @@ p, span, h1, h2, h3, h4, h5, h6 {
     direction: ltr !important;
 }
 
+nav.nav-row {
+    margin: 36px 36px;
+    transition: margin 250ms;
+}
+
+.navbar {
+    border-radius: 40px;
+}
+
 .banner-box {
     border-radius: 36px;
 }

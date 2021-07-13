@@ -44,6 +44,30 @@
 </head>
 
 <body>
+  <!--* Navbar -->
+  <nav class="row nav-row fixed-top" id="navbar">
+    <div class="col-6"></div>
+    <div class="navbar navbar-expand-lg navbar-dark col-6" style="background-color: #427be4;">
+      <div class="container-fluid justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-1" id="navbarNavAltMarkup">
+          <div class="navbar-nav d-flex justify-content-around flex-grow-1" dir="rtl">
+            <a class="nav-link active" href="#">خانه</a>
+            <a class="nav-link active" href="#">پنل داخل کابین</a>
+            <a class="nav-link active" href="#">پنل طبقات</a>
+            <a class="nav-link active" href="#">دکمه پنل</a>
+            <a class="nav-link active" href="#">نمایشگر</a>
+            <a class="nav-link active" href="#">تماس با ما</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--* Navbar End -->
+
   <!--* Content -->
   <div id="main-banner">
     <div class="row">
@@ -81,6 +105,13 @@
 
   <!-- script -->
   <script src="res/js/main.js"></script>
+
+  <script>
+    for (let i = 0; i < 48; i++) {
+      let hr = document.createElement("hr")
+      document.body.append(hr)
+    }
+  </script>
 </body>
 
 </html>
