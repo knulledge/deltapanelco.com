@@ -53,17 +53,20 @@
 <body>
   <!--* Navbar -->
   <nav id="navbar" class="d-flex nav-row fixed-top justify-content-end">
-    <div class="nav-space"></div>
     <div id="nav-content" class="d-flex navbar navbar-expand-lg navbar-dark">
-      <div class="nav-side d-flex">
-        <!-- <button>hi</button> -->
+      <div class="nav-side d-flex col-0">
+        <div class="px-4">
+          <button class="btn btn-light">btn 0</button>
+          <button class="btn btn-light">btn 1</button>
+          <button class="btn btn-light">btn 2</button>
+        </div>
       </div>
-      <div id="nav-center" class="nav-center container-fluid justify-content-end">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <div id="nav-center" class="nav-center container-fluid justify-content-end col-6">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-alt-markup"
+          aria-controls="navbar-alt-markup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse flex-grow-1" id="navbarNavAltMarkup">
+        <div id="navbar-alt-markup" class="collapse navbar-collapse flex-grow-1">
           <div class="navbar-nav d-flex justify-content-around flex-grow-1" dir="rtl">
             <a class="nav-link active" href="#">خانه</a>
             <a class="nav-link active" href="#">پنل داخل کابین</a>
@@ -74,8 +77,10 @@
           </div>
         </div>
       </div>
-      <div class="nav-side d-flex justify-content-end">
-        <!-- <h2>دلتا پنل</h2> -->
+      <div class="nav-side d-flex justify-content-end col-0">
+        <div class="px-4">
+          <h3 class="text-light">دلتا پنل</h3>
+        </div>
       </div>
     </div>
   </nav>
@@ -85,7 +90,7 @@
   <div id="main-banner">
     <div class="row">
       <div class="col-5">
-        <div class="banner-box" id="main-banner-box"></div>
+        <div id="main-banner-box" class="banner-box"></div>
       </div>
       <div class="col-1"></div>
       <div class="col-6 d-flex align-items-center">

@@ -10,32 +10,30 @@ p, span, h1, h2, h3, h4, h5, h6 {
     direction: ltr !important;
 }
 
+#navbar *[class*='col-'], #navbar .col {
+    transition:
+        opacity 100ms,
+        top 500ms ease-out,
+        padding 250ms ease-out,
+        width 250ms ease-out;
+}
+
+.col-0 {
+    flex: 0 0 auto;
+    width: 0;
+}
+
+
+/** Navbar */
 nav.nav-row {
     margin: 36px 36px;
     transition: margin 250ms;
 }
 
-nav.nav-row > div {
-    transition: flex 250ms;
-}
-
-.nav-space {
-    flex: 6;
-}
-
-.expand .nav-space {
-    flex: 0;
-}
-
 .navbar {
     overflow: hidden;
-    flex: 6;
     border-radius: 40px;
     background-color: #427be4;
-}
-
-.navbar > div {
-    transition: flex 250ms;
 }
 
 .navbar .nav-side {
@@ -44,30 +42,24 @@ nav.nav-row > div {
     height: 1rem;
     top: 200%;
     opacity: 0;
-    flex: 0;
-    transition:
-        opacity 250ms,
-        flex 250ms,
-        top 500ms,
-        padding 100ms;
+}
+
+.navbar .nav-side * {
+    position: relative;
+    top: -1.6px;
 }
 
 .navbar.expand .nav-side {
+    padding: 0 0;
     height: 2rem;
     top: 0%;
     pointer-events: all;
     opacity: 1;
-    flex: 3;
 }
+/** Navbar End */
 
-.navbar .nav-side.padding {
-    padding: 0 24px;
-}
 
-.navbar .nav-center {
-    flex: 6;
-}
-
+/** Banner */
 .banner-box {
     border-radius: 36px;
 }
@@ -84,3 +76,4 @@ nav.nav-row > div {
     margin: 36px 0;
     content: '';
 }
+/** Banner End */
