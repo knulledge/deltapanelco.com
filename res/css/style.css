@@ -15,7 +15,7 @@ nav.nav-row {
     transition: margin 250ms;
 }
 
-nav.nav-row div {
+nav.nav-row > div {
     transition: flex 250ms;
 }
 
@@ -28,24 +28,40 @@ nav.nav-row div {
 }
 
 .navbar {
+    overflow: hidden;
     flex: 6;
     border-radius: 40px;
     background-color: #427be4;
 }
 
-.navbar div {
+.navbar > div {
     transition: flex 250ms;
 }
 
-/* Should not use opacity */
 .navbar .nav-side {
+    pointer-events: none;
+    position: relative;
+    height: 1rem;
+    top: 200%;
     opacity: 0;
     flex: 0;
+    transition:
+        opacity 250ms,
+        flex 250ms,
+        top 500ms,
+        padding 100ms;
 }
 
 .navbar.expand .nav-side {
+    height: 2rem;
+    top: 0%;
+    pointer-events: all;
     opacity: 1;
     flex: 3;
+}
+
+.navbar .nav-side.padding {
+    padding: 0 24px;
 }
 
 .navbar .nav-center {

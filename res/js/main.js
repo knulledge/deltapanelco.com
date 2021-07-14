@@ -25,10 +25,17 @@ $(function () {
             });
         }
 
-        if ($(this).scrollTop() > $('#main-banner').height())
+        if ($(this).scrollTop() > $('#main-banner').height()) {
             $('#navbar, #nav-content').addClass('expand');
-        else
+            $('.nav-side').addClass('padding');
+        } else {
             $('#navbar, #nav-content').removeClass('expand');
+            if ($('.nav-side').hasClass('padding')) {
+                setTimeout(function () {
+                    $('.nav-side').removeClass('padding');
+                }, 100);
+            }
+        }
     };
     navScroll();
 
