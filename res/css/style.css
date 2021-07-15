@@ -13,7 +13,6 @@ p, span, h1, h2, h3, h4, h5, h6 {
 #navbar *[class*='col-'], #navbar .col {
     transition:
         opacity 100ms,
-        top 500ms ease-out,
         padding 250ms ease-out,
         width 250ms ease-out;
 }
@@ -22,6 +21,7 @@ p, span, h1, h2, h3, h4, h5, h6 {
     flex: 0 0 auto;
     width: 0;
 }
+
 
 /** Scrollbar  */
 ::-webkit-scrollbar {
@@ -54,25 +54,47 @@ nav.nav-row {
     background-color: #427be4;
 }
 
-.navbar .nav-side {
+.navbar .nav-side { 
     pointer-events: none;
-    position: relative;
     height: 1rem;
-    top: 200%;
     opacity: 0;
 }
 
-.navbar .nav-side * {
+.navbar .nav-side > * {
     position: relative;
-    top: -1.6px;
+    top: -3px;
 }
 
 .navbar.expand .nav-side {
     padding: 0 0;
     height: 2rem;
-    top: 0%;
     pointer-events: all;
     opacity: 1;
+}
+
+.navbar .nav-side .side-icon,
+.navbar .nav-side .nav-title {
+    position: relative;
+    top: 200%;
+    transition: top 250ms ease-out;
+}
+
+.navbar.expand .nav-side .side-icon,
+.navbar.expand .nav-side .nav-title {
+    top: 0%;
+}
+
+.navbar.expand .nav-side .side-icon:nth-child(1),
+.navbar.expand .nav-side .nav-title {
+    transition-delay: 50ms;
+}
+
+.navbar.expand .nav-side .side-icon:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.navbar.expand .nav-side .side-icon:nth-child(3) {
+    transition-delay: 150ms;
 }
 /** Navbar End */
 
