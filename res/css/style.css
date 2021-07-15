@@ -84,6 +84,12 @@ nav.nav-row {
     top: 0%;
 }
 
+.navbar .nav-side a.side-icon {
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
 .navbar.expand .nav-side .side-icon:nth-child(1),
 .navbar.expand .nav-side .nav-title {
     transition-delay: 50ms;
