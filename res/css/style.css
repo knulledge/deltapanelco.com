@@ -23,6 +23,24 @@ p, span, h1, h2, h3, h4, h5, h6 {
     width: 0;
 }
 
+/** Scrollbar  */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d3d3d3;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #427be4; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3564bb; 
+}
+/** Scrollbar End */ 
+
 
 /** Navbar */
 nav.nav-row {
