@@ -22,6 +22,11 @@ p, span, h1, h2, h3, h4, h5, h6 {
     width: 0;
 }
 
+.display-1 {
+    font-weight: 400;
+    word-spacing: -10px;
+}
+
 
 /** Scrollbar  */
 ::-webkit-scrollbar {
@@ -90,17 +95,22 @@ nav.nav-row {
     margin-right: 5px;
 }
 
-.navbar.expand .nav-side .side-icon:nth-child(1),
-.navbar.expand .nav-side .nav-title {
-    transition-delay: 50ms;
+.nav-title {
+    font-weight: 400;
 }
 
-.navbar.expand .nav-side .side-icon:nth-child(2) {
+.navbar.expand .nav-side .side-icon:nth-child(1),
+.navbar.expand .nav-side .nav-title:nth-child(1) {
     transition-delay: 100ms;
 }
 
-.navbar.expand .nav-side .side-icon:nth-child(3) {
+.navbar.expand .nav-side .side-icon:nth-child(2),
+.navbar.expand .nav-side .nav-title:nth-child(2) {
     transition-delay: 150ms;
+}
+
+.navbar.expand .nav-side .side-icon:nth-child(3) {
+    transition-delay: 200ms;
 }
 
 div.current-box {
@@ -129,7 +139,7 @@ div.current-box {
 }
 
 .nav-center:hover .navbar-nav .nav-link.current {
-    background-color: transparent;
+    background-color: #0000;
     transition: background-color 0ms 0ms, color 350ms;
 }
 /** Navbar End */
