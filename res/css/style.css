@@ -1,9 +1,26 @@
+:root {
+    --primary-color: #505050;
+    --secondary-color: #404040;
+    --passive-color: #202020;
+    --bg-color: #303030;
+    --text-color: #ffffff;
+    --nav-mouse-enter: #ffff;
+    --nav-mouse-leave: #0000;
+}
+
 body {
     font-family: 'Vazir', sans-serif, var(--bs-font-sans-serif);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 p, span, h1, h2, h3, h4, h5, h6 {
     direction: rtl;
+    color: var(--text-color);
+}
+
+hr {
+    color: var(--primary-color);
 }
 
 *[dir='ltr'] {
@@ -34,15 +51,15 @@ p, span, h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #d3d3d3;
+    background-color: var(--passive-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #427be4; 
+    background: var(--primary-color); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #3564bb; 
+    background: var(--secondary-color); 
 }
 /** Scrollbar End */ 
 
@@ -56,7 +73,7 @@ nav.nav-row {
 .navbar {
     overflow: hidden;
     border-radius: 40px;
-    background-color: #427be4;
+    background-color: var(--primary-color);
 }
 
 .navbar .nav-side { 
@@ -110,7 +127,7 @@ nav.nav-row {
 
 div.current-box {
     position: fixed;
-    background-color: #fff;
+    background-color: var(--nav-mouse-enter);
     border-radius: 40px;
     opacity: 0;
     transition: left 350ms, width 350ms, opacity 0ms 350ms;
@@ -128,13 +145,13 @@ div.current-box {
 }
 
 .navbar-nav .nav-link.current {
-    background-color: #ffff;
-    color: #427be4 !important;
+    background-color: var(--nav-mouse-enter);
+    color: var(--primary-color) !important;
     transition: background-color 0ms 350ms, color 350ms;
 }
 
 .nav-center:hover .navbar-nav .nav-link.current {
-    background-color: #0000;
+    background-color: var(--nav-mouse-leave);
     transition: background-color 0ms 0ms, color 350ms;
 }
 /** Navbar End */
@@ -150,7 +167,7 @@ div.current-box {
 }
 
 #main-banner-box {
-    background-color: #427be4;
+    background-color: var(--primary-color);
     width: 100%;
     height: calc(100vh - 72px);
     min-height: 36vw;
