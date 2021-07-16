@@ -106,14 +106,14 @@ nav.nav-row {
 div.current-box {
     position: fixed;
     background-color: #fff;
-    border: 2px solid #fff; /* ? */
     border-radius: 40px;
     opacity: 0;
-    transition: left 350ms, width 350ms;
+    transition: left 350ms, width 350ms, opacity 0ms 350ms;
 }
 
 .nav-center:hover .navbar-nav div.current-box {
     opacity: 1;
+    transition: left 350ms, width 350ms, opacity 0ms 0ms;
 }
 
 .navbar-nav .nav-link {
@@ -125,11 +125,12 @@ div.current-box {
 .navbar-nav .nav-link.current {
     background-color: #ffff;
     color: #427be4 !important;
-    transition: background-color 2ms, color 350ms;
+    transition: background-color 0ms 350ms, color 350ms;
 }
 
 .nav-center:hover .navbar-nav .nav-link.current {
     background-color: transparent;
+    transition: background-color 0ms 0ms, color 350ms;
 }
 /** Navbar End */
 
