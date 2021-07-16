@@ -67,4 +67,78 @@ $(document).ready(function () {
     $(document).scroll(function () {
         navScroll();
     });
+
+    setInterval(function () {
+        let $current = $('.nav-link.current');
+        let rect = $current[0].getBoundingClientRect();
+
+        $('.current-box').css({
+            left: rect.left,
+            width: $current.width()
+                + parseVal($current.css('padding-right')).val
+                + parseVal($current.css('padding-left')).val,
+            height: $current.height()
+                + parseVal($current.css('padding-top')).val
+                + parseVal($current.css('padding-bottom')).val,
+        });
+    }, 16);
+
+    let timeoutWhite = null;
+    let timeoutTransparent = null;
+
+    let $currentLink = $('.nav-link.current');
+    $('.navbar-nav .nav-link').hover(function () {
+        $('.nav-link.current').removeClass('current');
+        $(this).addClass('current');
+    });
+
+    $('.nav-center').hover(function (event) {
+        clearTimeout(timeoutWhite);
+        clearTimeout(timeoutTransparent);
+
+        timeoutTransparent = setTimeout(function () {
+            $('.navbar-nav .nav-link').css({
+                backgroundColor: '#0000'
+            });
+        }, 60);
+
+        setTimeout(function () {
+            $('div.current-box').css({
+                transition: 'left 350ms, width 350ms, opacity 0ms 350ms'
+            });
+        }, 0);
+
+        event.stopPropagation();
+    }, function (event) {
+        clearTimeout(timeoutTransparent);
+
+        $('.nav-link.current').removeClass('current');
+
+        let transition = 300; // + 50
+        $currentLink.addClass('current');
+
+        if (!$('div.current-box').css('transition').includes('opacity'))
+            transition = 0;
+
+        timeoutWhite = setTimeout(function () {
+            $('.navbar-nav .nav-link').css({
+                backgroundColor: '#0000'
+            });
+            $currentLink.css({
+                backgroundColor: '#ffff'
+            });
+        }, transition);
+
+        setTimeout(function () {
+            $('div.current-box').css({
+                transition: ''
+            });
+        }, transition + 50);
+
+        if (transition <= 0) setTimeout(function () {
+            $('div.current-box').css({ transition: '' });
+        }, 350);
+
+        event.stopPropagation();
+    });
 });

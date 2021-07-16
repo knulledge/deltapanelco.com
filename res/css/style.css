@@ -102,6 +102,35 @@ nav.nav-row {
 .navbar.expand .nav-side .side-icon:nth-child(3) {
     transition-delay: 150ms;
 }
+
+div.current-box {
+    position: fixed;
+    background-color: #fff;
+    border: 2px solid #fff; /* ? */
+    border-radius: 40px;
+    opacity: 0;
+    transition: left 350ms, width 350ms;
+}
+
+.nav-center:hover .navbar-nav div.current-box {
+    opacity: 1;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    border-radius: 40px;
+    transition: all 0ms;
+}
+
+.navbar-nav .nav-link.current {
+    background-color: #ffff;
+    color: #427be4 !important;
+    transition: background-color 2ms, color 350ms;
+}
+
+.nav-center:hover .navbar-nav .nav-link.current {
+    background-color: transparent;
+}
 /** Navbar End */
 
 
