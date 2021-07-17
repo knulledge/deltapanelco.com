@@ -44,6 +44,14 @@ hr {
     word-spacing: -10px;
 }
 
+.text-shadow {
+    text-shadow: 0 0.2rem 0.6rem #0005 !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
 
 /** Scrollbar  */
 ::-webkit-scrollbar {
