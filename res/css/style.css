@@ -52,6 +52,53 @@ hr {
     text-align: justify !important;
 }
 
+/** Container */
+@media (min-width: 576px) {
+    .container-sm,
+    .container {
+      max-width: 768px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1420px;
+    }
+}
+/** Container End */
+
 
 /** Scrollbar  */
 ::-webkit-scrollbar {
@@ -74,7 +121,8 @@ hr {
 
 /** Navbar */
 nav.nav-row {
-    margin: 36px 36px;
+    margin-top: 36px;
+    margin-bottom: 36px;
     transition: margin 250ms;
 }
 
@@ -170,10 +218,6 @@ div.current-box {
     border-radius: 36px;
 }
 
-#main-banner {
-    margin: 0 36px;
-}
-
 #main-banner-box {
     background-color: var(--primary-color);
     width: 100%;
@@ -181,5 +225,12 @@ div.current-box {
     min-height: 36vw;
     margin: 36px 0;
     content: '';
+}
+
+@media (min-height: 1200px) {
+    #main-banner-box {
+        min-height: 800px;
+        max-height: 800px;
+    }
 }
 /** Banner End */
