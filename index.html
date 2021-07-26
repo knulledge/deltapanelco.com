@@ -12,29 +12,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazir-font@29.1.0/dist/font-face.css"
     integrity="sha256-xNqufdRoNdliwXjA7tozAyu+HW6VkBsK8/idbGwiIjg=" crossorigin="anonymous">
 
+  <!-- fullpage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.min.css"
+    integrity="sha256-27KRQA6ck6EiKWEkCpHR2NcEeAYnqz8Q5a83PYHh1z0=" crossorigin="anonymous" onerror="{
+      let link = document.createElement('link');
+      link.type = 'text/css';
+      link.rel = 'stylesheet';
+      link.href = 'res/lib/fullpage.js/jquery.fullpage.min.css';
+      document.head.appendChild(link);
+    }">
+
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    integrity="sha256-djO3wMl9GeaC/u6K+ic4Uj/LKhRUSlUFcsruzS7v5ms=" crossorigin="anonymous">
-
-  <!-- bootstrap local fallback -->
-  <script>
-    {
-      let test = document.createElement("div")
-      test.className = "hidden d-none"
-
-      document.head.appendChild(test)
-      let cssLoaded = window.getComputedStyle(test).display === "none"
-      document.head.removeChild(test)
-
-      if (!cssLoaded) {
-        let link = document.createElement("link");
-        link.type = "text/css";
-        link.rel = "stylesheet";
-        link.href = "res/lib/bootstrap/bootstrap.min.css";
-        document.head.appendChild(link);
-      }
-    }
-  </script>
+    integrity="sha256-djO3wMl9GeaC/u6K+ic4Uj/LKhRUSlUFcsruzS7v5ms=" crossorigin="anonymous" onerror="{
+      let link = document.createElement('link');
+      link.type = 'text/css';
+      link.rel = 'stylesheet';
+      link.href = 'res/lib/bootstrap/bootstrap.min.css';
+      document.head.appendChild(link);
+    }">
 
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="res/lib/bootstrap-icons/bootstrap-icons.css">
@@ -119,6 +115,15 @@
   <!-- jquery local fallback -->
   <script>
     window.jQuery || document.write('<script src="res/lib/jquery/jquery.min.js"><\/script>')
+  </script>
+
+  <!-- fullpage -->
+  <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.min.js"
+    integrity="sha256-SNaaqfQPa0XlEqQDrsurQ+Qq5XnhNrwHQXnZpdXlCEI=" crossorigin="anonymous"></script>
+
+  <!-- fullpage local fallback -->
+  <script>
+    $.fn.fullpage || document.write('<script src="res/lib/fullpage.js/jquery.fullpage.min.js"><\/script>')
   </script>
 
   <!-- bootstrap -->
