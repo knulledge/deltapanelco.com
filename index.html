@@ -48,7 +48,8 @@
 
 <body>
   <!--* Navbar -->
-  <nav id="navbar" class="container d-flex nav-row fixed-top justify-content-end" expand-height-target="#main-banner">
+  <nav id="navbar" class="container d-flex nav-row fixed-top justify-content-end" expand-locked="true"
+    expand-height-target="#head-section">
     <div id="nav-content" class="d-flex navbar navbar-expand-lg navbar-dark shadow">
       <div class="nav-side d-flex col-0">
         <div class="px-4">
@@ -87,26 +88,14 @@
   </nav>
   <!--* Navbar End -->
 
-  <!--* Main Banner -->
-  <div id="main-banner" class="container">
-    <div class="row">
-      <div class="col-5">
-        <div id="main-banner-box" class="banner-box shadow"></div>
-      </div>
-      <div class="col-1"></div>
-      <div class="col-6 d-flex align-items-center">
-        <div>
-          <h1 class="display-1 text-shadow">دلتا پنل</h1>
-          <p class="text-shadow text-justify">گروه دلتا پنل با تکیه بر دانش متخصصین کارآزموده خود در عرصه طراحی و تولید
-            انواع پنل‌ها و دگمه‌های آسانسور مبتنی بر دانش روز جهانی و با بهره‌گیری از آخرین متدها، خدمت گزار مشتریان
-            خواهد بود. استفاده از نیروی متخصص تحصیل کرده داخلی در کنار تجربه مدیران این مجموعه همواره عامل اصلی در نهایی
-            شدن قیمت محصولات دلتا پنل است؛ پشتوانه دلتا پنل برای رقابت با سایر تولید کننده‌ها هم قیمت نهایی محصول است که
-            توانسته انتظارات بازار مصرف از دلتا پنل را به حد مطلوب پاسخگو باشد.</p>
-        </div>
-      </div>
-    </div>
+  <!--* FullPage -->
+  <div id="fullpage">
+    <div id="head-section" class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
   </div>
-  <!--* Main Banner End -->
+  <!--* FullPage End -->
 
   <!-- jquery -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
@@ -138,13 +127,7 @@
   <!-- script -->
   <script src="res/js/main.js"></script>
   <script src="res/js/navbar.js"></script>
-
-  <script>
-    for (let i = 0; i < 48; i++) {
-      let hr = document.createElement("hr")
-      document.body.append(hr)
-    }
-  </script>
+  <script src="res/js/main-fullpage.js"></script>
 </body>
 
 </html>
