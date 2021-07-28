@@ -7,7 +7,8 @@
 │  ├─ css/      # CSS files
 │  ├─ img/      # Images
 │  ├─ js/       # JavaScript files
-│  └─ lib/      # Front-end libraries
+│  ├─ lib/      # Front-end libraries
+│  └─ svg/      # SVG files
 ├─ index.html   # Homepage
 └─ ...          # Other files
 ```
