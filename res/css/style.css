@@ -36,6 +36,7 @@ hr {
 
 #fp-nav span {
     background-color: var(--text-color) !important;
+    box-shadow: 0 0.2rem 0.4rem #0005 !important;
 }
 
 .fp-tooltip {

@@ -5,7 +5,7 @@ $(document).ready(function () {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors: ['top', 'cabin-panels', 'floor-panel', 'contact-us'],
+        anchors: ['top', 'cabin-panel', 'floor-panel', 'contact-us'],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: [
@@ -85,11 +85,11 @@ $(document).ready(function () {
                 });
             }
         },
-        afterLoad: function (anchorLink, index) { },
-        afterRender: function () { },
-        afterResize: function () { },
-        afterResponsive: function (isResponsive) { },
-        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) { },
-        onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) { }
+        afterLoad: function (anchorLink, index) { /* Empty */ },
+        afterRender: function () { /* Empty */ },
+        afterResize: function () { /* Empty */ },
+        afterResponsive: function (isResponsive) { /* Empty */ },
+        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) { /* Empty */ },
+        onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) { /* Empty */ }
     });
 });
