@@ -243,3 +243,20 @@ div.current-box {
     }
 }
 /** Banner End */
+
+/** Fullpage Sections */
+div#head-section #delta-text {
+    position: absolute;
+    top: 46px;
+    left: 0;
+}
+
+div#head-section .delta {
+    max-width: 65vh;
+    max-height: 55vh;
+}
+
+div#head-section p {
+    color: #606060;
+}
+/** Fullpage Sections End */

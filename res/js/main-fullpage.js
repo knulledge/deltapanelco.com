@@ -54,8 +54,8 @@ $(document).ready(function () {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        paddingTop: '3em',
-        paddingBottom: '10px',
+        paddingTop: '5em',
+        paddingBottom: '36px',
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
