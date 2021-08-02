@@ -7,7 +7,7 @@ $(document).ready(function () {
         lockAnchors: false,
         anchors: ['top', 'cabin-panel', 'floor-panel', 'contact-us'],
         navigation: true,
-        navigationPosition: 'right',
+        navigationPosition: 'left',
         navigationTooltips: [
             'صفحه اصلی',
             'پنل داخل کابین',
