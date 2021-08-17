@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #505050;
+    --primary-color: #252525;
     --secondary-color: #404040;
     --passive-color: #202020;
-    --bg-color: #303030;
+    --bg-color: #131316;
     --text-color: #ffffff;
     --nav-mouse-enter: #ffff;
     --nav-mouse-leave: #0000;
@@ -164,9 +164,20 @@ nav.nav-row {
 }
 
 .navbar {
-    overflow: hidden;
-    border-radius: 40px;
-    background-color: var(--primary-color);
+    /* overflow: hidden; */
+    border-radius: 999px;
+    background: linear-gradient(to right, #252525, #303030);    
+    background-clip: padding-box;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, .3);
+}
+
+.navbar::after {
+    position: absolute;
+    border-radius: 999px;
+    inset: -3px; /*! Check browser compatibility */
+    background: linear-gradient(to top left, #252525, #353535);
+    content: '';
+    z-index: -1;
 }
 
 .navbar .nav-side { 
@@ -288,3 +299,56 @@ div#head-section p {
     color: #606060;
 }
 /** Fullpage Sections End */
+
+/* .guide {
+    border-left: 1px solid white;
+    height: 100vh;  
+}
+
+.guide:last-child {
+    border-right: 1px solid white;
+} */
+
+.section-title {
+    font-size: 150px;
+    word-spacing: -24px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 20px;
+    word-spacing: -1px;
+    line-height: 1.75rem;
+    text-align: justify;
+    color: #45454C;
+    /* font-weight: bold; */
+}
+
+.primary-btn:link, .primary-btn:visited,
+.secondary-btn:link, .secondary-btn:visited {
+    width: 220px;
+    height: 60px;
+    border-radius: 999px;
+    border: solid 3px transparent;
+    transition: opacity 0.3s;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, .3);
+}
+
+.primary-btn:link, .primary-btn:visited {
+    border-bottom-right-radius: 0;
+    background-image: linear-gradient(to right, #F7283C, #EF3C56), 
+                      linear-gradient(to top left, #F7283C, #EF5E7A);
+}
+
+.secondary-btn:link, .secondary-btn:visited {
+    border-top-left-radius: 0;
+    background-image: linear-gradient(to right, #252525, #303030), 
+                      linear-gradient(to top left, #252525, #353535);
+}
+
+.primary-btn:hover, .primary-btn:active,
+.secondary-btn:hover, .secondary-btn:active {
+    opacity: 0.85;
+}
