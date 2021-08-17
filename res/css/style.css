@@ -166,8 +166,12 @@ nav.nav-row {
     transition: margin 250ms;
 }
 
+#navbar {
+    padding: 3px;
+    overflow: hidden;
+}
+
 .navbar {
-    /* overflow: hidden; */
     border-radius: 999px;
     background: linear-gradient(to right, #252525, #303030);    
     background-clip: padding-box;
