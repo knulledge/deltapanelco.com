@@ -385,3 +385,22 @@ div#head-section p {
     width: 60vh;
     height: 60vh;
 }
+
+.scroller {
+    width: 16px;
+    height: 38px;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    border-top-left-radius: 0;
+    position: absolute;
+    left: 23px;
+    bottom: 23px;
+    padding: 3px 0;
+}
+
+.wheel {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+}
