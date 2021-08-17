@@ -13,6 +13,9 @@ body {
     color: var(--text-color);
     background: var(--bg-color);
     background-color: var(--bg-color);
+}
+
+.noise {
     background-image: url("/res/img/noise.png");
 }
 
@@ -282,6 +285,7 @@ div.current-box {
 }
 /** Banner End */
 
+
 /** Fullpage Sections */
 div#head-section #delta-text {
     position: absolute;
@@ -297,7 +301,6 @@ div#head-section .delta {
 div#head-section p {
     color: #606060;
 }
-/** Fullpage Sections End */
 
 /* .guide {
     border-left: 1px solid white;
@@ -321,6 +324,8 @@ div#head-section p {
     text-align: justify;
     color: #45454C;
 }
+/** Fullpage Sections End */
+
 
 .primary-btn:link, .primary-btn:visited,
 .secondary-btn:link, .secondary-btn:visited {
@@ -351,7 +356,7 @@ div#head-section p {
 }
 
 .faded-circle {
-    background-color: #cccccc02;
+    background-color: #CCCCCC02;
     border-radius: 50%;
     position: absolute;
     z-index: -999;
