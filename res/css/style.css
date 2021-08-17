@@ -403,4 +403,12 @@ div#head-section p {
     height: 8px;
     background-color: #fff;
     border-radius: 50%;
+    animation: scroll 0.4s infinite alternate;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+@keyframes scroll {
+    to {
+        margin-bottom: 20px;
+    }
+  }
