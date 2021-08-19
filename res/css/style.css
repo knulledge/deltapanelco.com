@@ -337,9 +337,10 @@ div#head-section p {
     height: 54px;
     border-radius: 999px;
     border: solid 3px transparent;
-    transition: opacity 0.3s;
+    transition: background-position 0.2s ease;
     background-origin: border-box;
     background-clip: content-box, border-box;
+    background-size: 200%;
 }
 
 .primary-btn:link, .primary-btn:visited {
@@ -356,7 +357,7 @@ div#head-section p {
 
 .primary-btn:hover, .primary-btn:active,
 .secondary-btn:hover, .secondary-btn:active {
-    opacity: 0.85;
+    background-position: 100%;
 }
 
 .faded-circle {
