@@ -14,5 +14,10 @@
   "bugs": {
     "url": "https://github.com/aitchex/deltapanelco.com/issues"
   },
-  "homepage": "https://github.com/aitchex/deltapanelco.com#readme"
+  "homepage": "https://github.com/aitchex/deltapanelco.com#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
+  }
 }
