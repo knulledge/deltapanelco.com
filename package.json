@@ -1,0 +1,18 @@
+{
+  "name": "deltapanelco.com",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aitchex/deltapanelco.com.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/aitchex/deltapanelco.com/issues"
+  },
+  "homepage": "https://github.com/aitchex/deltapanelco.com#readme"
+}
