@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa-IR">
 
 <head>
   <meta charset="UTF-8">
@@ -21,190 +21,31 @@
       link.href = 'res/lib/fullpage.js/jquery.fullpage.min.css';
       document.head.appendChild(link);
     }">
-
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-    integrity="sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=" crossorigin="anonymous" onerror="{
-      let link = document.createElement('link');
-      link.type = 'text/css';
-      link.rel = 'stylesheet';
-      link.href = 'res/lib/bootstrap/bootstrap.min.css';
-      document.head.appendChild(link);
-    }">
-
-  <!-- bootstrap icons -->
-  <link rel="stylesheet" href="res/lib/bootstrap-icons/bootstrap-icons.css">
-
-  <!-- style -->
-  <link rel="stylesheet" href="res/css/style.css">
-
-  <style class="remove">
-    * {
-      transition: all 0ms !important;
-    }
-
-  </style>
 </head>
 
 <body>
-  <!--* Navbar -->
-  <nav id="navbar" class="container d-flex nav-row fixed-top justify-content-end" expand-locked="true"
-    expand-height-target="#head-section">
-    <div id="nav-content" class="d-flex navbar navbar-expand-lg navbar-dark shadow">
-      <div class="nav-side d-flex col-0">
-        <div class="px-4">
-          <a href="#" class="text-light side-icon">
-            <em class="bi bi-instagram"></em>
-          </a>
-          <a href="#" class="text-light side-icon">
-            <em class="bi bi-whatsapp"></em>
-          </a>
-        </div>
-      </div>
-      <div id="nav-center" class="nav-center justify-content-end col-6">
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-alt-markup"
-          aria-controls="navbar-alt-markup" aria-expanded="false" aria-label="Toggle navigation" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbar-alt-markup" class="collapse navbar-collapse flex-grow-1">
-          <div class="navbar-nav d-flex justify-content-around flex-grow-1" dir="rtl">
-            <div class="current-box"></div>
-            <a class="nav-link active current" href="#">صفحه اصلی</a>
-            <a class="nav-link active" href="#">پنل داخل کابین</a>
-            <a class="nav-link active" href="#">پنل طبقات</a>
-            <a class="nav-link active" href="#">دکمه پنل</a>
-            <a class="nav-link active" href="#">نمایشگر</a>
-            <a class="nav-link active" href="#">تماس با ما</a>
-          </div>
-        </div>
-      </div>
-      <div class="nav-side d-flex justify-content-end col-0">
-        <div class="px-4" style="position: relative; top: -2px;" dir="rtl">
-          <h3 class="text-light nav-title d-inline">دلتا</h3>
-          <h3 class="text-light nav-title d-inline">پنل</h3>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!--* Navbar End -->
-
-  <!-- <div class="container fixed-top">
-    <div class="row">
-      <div class="col guide"></div>
-      <div class="col guide"></div>
-      <div class="col guide"></div>
-      <div class="col guide"></div>
-    </div>
-  </div> -->
-
   <!--* FullPage -->
   <div id="fullpage">
     <!--* Hero Section -->
-    <section class="section noise">
-      <div class="container">
-        <div class="row">
-          <div class="col d-flex justify-content-center align-items-center">
-            <div class="faded-circle"></div>
-            <div class="faded-circle"></div>
-            <div class="faded-circle"></div>
-            <div class="faded-circle"></div>
-            <img src="res/svg/delta.svg" alt="پنل" width="480px" style="pointer-events: none;">
-          </div>
-          <div class="col d-flex flex-column gap-3">
-            <h1 class="section-title">دلتا پنل</h1>
-            <p class="description">
-              گروه دلتا پنل با تکیه بر دانش متخصصین کارآزموده خود در عرصه طراحی و تولید انواع پنل‌ها و دگمه‌های آسانسور
-              مبتنی بر دانش روز جهانی و با بهره‌گیری از آخرین متدها، خدمت گزار مشتریان خواهد بود.
-              استفاده از نیروی متخصص تحصیل کرده داخلی در کنار تجربه مدیران این مجموعه همواره عامل اصلی در نهایی شدن قیمت
-              محصولات دلتا پنل است.
-            </p>
-            <div class="d-flex justify-content-end gap-5">
-              <a href="#" class="primary-btn shadow"></a>
-              <a href="#" class="secondary-btn shadow"></a>
-            </div>
-          </div>
-        </div>
-        <a href="#cabin-panel">
-          <div class="scroller d-flex justify-content-center align-items-end">
-            <div class="wheel"></div>
-          </div>
-        </a>
-      </div>
+    <section class="section">
     </section>
     <!--* Hero Section End-->
 
-    <!--* Cabin Panel Section -->
-    <section id="cabin-panel-section" class="section noise">
-      <div id="cabin-panel-section" class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6 text-center">
-            <object class="pe-none product-shadow" data="res/svg/floor-panel.svg" height="300">
-              <h1 class="fw-bold">
-                پنل کابین
-              </h1>
-            </object>
-          </div>
-          <div class="col-12 col-lg-6">
-            <h1 class="fw-bold">
-              پنل کابین
-            </h1>
-            <hr>
-            <p class="text-justify">
-              ظرافت در طراحی و استفاده از بهترین مواد اولیه در تولید وجه تمایز ارائه خدمات دلتا پنل است. تخصص کارشناسان
-              دلتا پنل در جانمایی پنل‌های داخل کابین آسانسور توانسته رضایت مشتریان را به همراه داشته باشد. برای مشاهده
-              محصولات وارد صفحه شوید.
-            </p>
-            <br>
-            <a class="btn btn-light" href="#">
-              مشاهده محصولات
-            </a>
-          </div>
-        </div>
-      </div>
+    <!--* Cabin Section -->
+    <section class="section">
     </section>
-    <!--* Cabin Panel Section End -->
+    <!--* Cabin Section End -->
 
-    <!--* Floor Panel Section-->
-    <section id="floor-panel-section" class="section noise">
-      <div id="floor-panel-section" class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6 text-center">
-            <object class="pe-none product-shadow" data="res/svg/floor-panel.svg" height="300">
-              <h1 class="fw-bold">
-                پنل طبقات
-              </h1>
-            </object>
-          </div>
-          <div class="col-12 col-lg-6">
-            <h1 class="fw-bold">
-              پنل طبقات
-            </h1>
-            <hr>
-            <p class="text-justify">
-              زیبایی مهمترین عنصر طراحی پنل‌های طبقات برای آسانسور است؛ چرا که در معرض دید عموم قرار دارد و بایستی که
-              علاوه بر کارایی مناسب در هنگام استفاده جلوه‌ای شکوهمند ارائه دهد. برای مشاهده محصولات این گروه ادامه دهید.
-            </p>
-            <br>
-            <a class="btn btn-light" href="#">
-              مشاهده محصولات
-            </a>
-          </div>
-        </div>
-      </div>
+    <!--* Floor Section-->
+    <section class="section">
     </section>
-    <!--* Floor Panel Section End-->
+    <!--* Floor Section End-->
 
-    <!--* Contact Us Section-->
-    <section id="contact-us-section" class="section noise">
-      <div id="contact-us-section" class="container">
-        <div class="text-center">
-          <h1 class="fw-bold">درباره ما</h1>
-        </div>
-      </div>
+    <!--* Contact Section-->
+    <section class="section">
     </section>
+    <!--* Contact Section End-->
   </div>
-  <!--* Contact Us Section End-->
-
   <!--* FullPage End -->
 
   <!-- jquery -->
@@ -225,20 +66,8 @@
     $.fn.fullpage || document.write('<script src="res/lib/fullpage.js/jquery.fullpage.min.js"><\/script>')
   </script>
 
-  <!-- bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha256-KuvCVS19rfTjoLgMyDDCdOkRRlhNrY4psEM4uezts2M=" crossorigin="anonymous"></script>
-
-  <!-- bootstrap local fallback -->
-  <script>
-    window.bootstrap || document.write('<script src="res/lib/bootstrap/bootstrap.bundle.min.js"><\/script>')
-  </script>
-
-  <!-- script -->
-  <script src="res/js/main.js"></script>
-  <script src="res/js/navbar.js"></script>
+  <!-- scripts -->
   <script src="res/js/main-fullpage.js"></script>
-  <script src="res/js/canvas-image.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,9 @@
 $(document).ready(function () {
-    let navMargin = parseVal($navbar.css('margin-top'));
-
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors: ['top', 'cabin-panel', 'floor-panel', 'contact-us'],
+        anchors: ['hero', 'cabin', 'floor', 'contact'],
         navigation: true,
         navigationPosition: 'left',
         navigationTooltips: [
@@ -43,7 +41,6 @@ $(document).ready(function () {
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
         touchSensitivity: 15,
-        normalScrollElementTouchThreshold: 5,
         bigSectionsDestination: null,
 
         //Accessibility
@@ -54,14 +51,21 @@ $(document).ready(function () {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        paddingTop: '5em',
-        paddingBottom: '36px',
+        sectionsColor: ['#fff'],
+        paddingTop: '3em',
+        paddingBottom: '10px',
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
         parallax: false,
         parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
+        dropEffect: false,
+        dropEffectOptions: { speed: 2300, color: '#F82F4D', zIndex: 9999 },
+        waterEffect: false,
+        waterEffectOptions: { animateContent: true, animateOnMouseMove: true },
+        cards: false,
+        cardsOptions: { perspective: 100, fadeContent: true, fadeBackground: true },
 
         //Custom selectors
         sectionSelector: '.section',
@@ -70,26 +74,13 @@ $(document).ready(function () {
         lazyLoading: true,
 
         //events
-        onLeave: function (index, nextIndex, direction) {
-            if (index == 1 && nextIndex != 1) {
-                navExpand();
-                $navbar.css({
-                    marginTop: (navMargin.val / 4) + navMargin.unit,
-                    marginBottom: (navMargin.val / 4) + navMargin.unit
-                });
-            } else if (nextIndex == 1) {
-                navShrink();
-                $navbar.css({
-                    marginTop: navMargin.val + navMargin.unit,
-                    marginBottom: navMargin.val + navMargin.unit
-                });
-            }
-        },
-        afterLoad: function (anchorLink, index) { /* Empty */ },
-        afterRender: function () { /* Empty */ },
-        afterResize: function () { /* Empty */ },
-        afterResponsive: function (isResponsive) { /* Empty */ },
-        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) { /* Empty */ },
-        onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) { /* Empty */ }
+        onLeave: function (origin, destination, direction) { },
+        afterLoad: function (origin, destination, direction) { },
+        afterRender: function () { },
+        afterResize: function (width, height) { },
+        afterReBuild: function () { },
+        afterResponsive: function (isResponsive) { },
+        afterSlideLoad: function (section, origin, destination, direction) { },
+        onSlideLeave: function (section, origin, destination, direction) { }
     });
 });
