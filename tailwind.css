@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#fp-nav ul li a span {
+    background: #fff;
+}

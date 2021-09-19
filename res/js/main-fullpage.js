@@ -51,9 +51,9 @@ $(document).ready(function () {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor: ['#fff'],
-        paddingTop: '3em',
-        paddingBottom: '10px',
+        // sectionsColor: ['#fff'],
+        // paddingTop: '3em',
+        // paddingBottom: '10px',
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
         responsiveHeight: 0,
