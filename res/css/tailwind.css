@@ -604,12 +604,16 @@ video {
   position: absolute;
 }
 
-.bottom-6 {
-  bottom: 1.5rem;
+.top-6 {
+  top: 1.5rem;
 }
 
 .left-6 {
   left: 1.5rem;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
 }
 
 .col-span-5 {
@@ -768,6 +772,11 @@ video {
 
 .font-sans {
   font-family: vazir, sans-serif;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-8xl {
