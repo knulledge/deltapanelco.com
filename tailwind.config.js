@@ -6,6 +6,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['vazir', 'sans-serif']
+      },
       animation: {
         indicator: 'indicator 1s infinite',
       },
