@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['vazir', 'sans-serif']
+        'sans': ['Vazir', 'sans-serif'],
       },
       animation: {
         wave: 'wave 48s infinite linear',
