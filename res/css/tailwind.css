@@ -612,8 +612,20 @@ video {
   left: 1.5rem;
 }
 
+.right-\[38vw\] {
+  right: 38vw;
+}
+
+.top-\[-60vh\] {
+  top: -60vh;
+}
+
 .bottom-6 {
   bottom: 1.5rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-5 {
@@ -629,8 +641,8 @@ video {
   margin-right: auto;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-4 {
@@ -649,6 +661,10 @@ video {
   display: grid;
 }
 
+.h-\[2048px\] {
+  height: 2048px;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -661,12 +677,37 @@ video {
   height: 0.5rem;
 }
 
+.w-\[2048px\] {
+  width: 2048px;
+}
+
 .w-4 {
   width: 1rem;
 }
 
 .w-2 {
   width: 0.5rem;
+}
+
+.max-w-\[2560px\] {
+  max-width: 2560px;
+}
+
+@-webkit-keyframes wave {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-wave {
+  -webkit-animation: wave 48s infinite linear;
+          animation: wave 48s infinite linear;
 }
 
 @-webkit-keyframes indicator {
@@ -700,6 +741,13 @@ video {
 .animate-indicator {
   -webkit-animation: indicator 1s infinite;
           animation: indicator 1s infinite;
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .grid-cols-8 {
@@ -741,14 +789,14 @@ video {
   background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
 
-.bg-\[\#23212E\] {
-  --tw-bg-opacity: 1;
-  background-color: rgba(35, 33, 46, var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-6 {
@@ -794,14 +842,22 @@ video {
   line-height: 1.75rem;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-.text-red-200 {
+.text-red-800 {
   --tw-text-opacity: 1;
-  color: rgba(254, 202, 202, var(--tw-text-opacity));
+  color: rgba(153, 27, 27, var(--tw-text-opacity));
 }
 
 .text-yellow-300 {
@@ -822,4 +878,10 @@ video {
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:right-\[40vw\] {
+    right: 40vw;
+  }
 }

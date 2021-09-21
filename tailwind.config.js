@@ -10,9 +10,15 @@ module.exports = {
         'sans': ['vazir', 'sans-serif']
       },
       animation: {
+        wave: 'wave 48s infinite linear',
         indicator: 'indicator 1s infinite',
       },
       keyframes: {
+        wave: {
+          '100%': {
+            'transform': 'rotate(360deg)',
+          },
+        },
         indicator: {
           '0%, 100%': {
             'transform': 'translateY(0)',
