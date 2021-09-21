@@ -612,12 +612,12 @@ video {
   left: 1.5rem;
 }
 
-.right-\[38vw\] {
-  right: 38vw;
+.right-\[37vw\] {
+  right: 37vw;
 }
 
-.top-\[-60vh\] {
-  top: -60vh;
+.top-\[-44vh\] {
+  top: -44vh;
 }
 
 .bottom-6 {
@@ -649,8 +649,8 @@ video {
   margin-top: 1rem;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .inline-block {
@@ -663,10 +663,6 @@ video {
 
 .h-\[2048px\] {
   height: 2048px;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .h-6 {
@@ -716,6 +712,39 @@ video {
 .animate-wave {
   -webkit-animation: wave 48s infinite linear;
           animation: wave 48s infinite linear;
+}
+
+@-webkit-keyframes arrow {
+  0%, 100% {
+    transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateX(8px);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes arrow {
+  0%, 100% {
+    transform: translateX(0);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateX(8px);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-arrow {
+  -webkit-animation: arrow 1s infinite;
+          animation: arrow 1s infinite;
 }
 
 @-webkit-keyframes indicator {
