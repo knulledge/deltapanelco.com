@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Vazir', 'sans-serif'],
+        'trebuchet-ms': ['Trebuchet-MS', 'sans-serif'],
       },
       animation: {
         wave: 'wave 48s infinite linear',

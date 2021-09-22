@@ -612,10 +612,6 @@ video {
   left: 1.5rem;
 }
 
-.right-\[37vw\] {
-  right: 37vw;
-}
-
 .top-\[-44vh\] {
   top: -44vh;
 }
@@ -859,6 +855,10 @@ video {
   font-family: Vazir, sans-serif;
 }
 
+.font-trebuchet-ms {
+  font-family: Trebuchet-MS, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -912,13 +912,12 @@ video {
   background: #F3F4F6;
 }
 
+.fp-tooltip {
+  color: #F3F4F6 !important;
+  font-family: "Vazir", sans-serif !important;
+}
+
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:right-\[40vw\] {
-    right: 40vw;
-  }
 }
