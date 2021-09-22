@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Vazir', 'sans-serif'],
+        'iransansdn': ['iransansdn', 'Vazir', 'sans-serif'],
         'trebuchet-ms': ['Trebuchet-MS', 'sans-serif'],
       },
       animation: {

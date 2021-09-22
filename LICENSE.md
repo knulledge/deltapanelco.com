@@ -454,5 +454,19 @@ the avoidance of doubt, this paragraph does not form part of the
 public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
+```
 
+# Proprietary Licenses
+
+IRANSansDN font is commercial/proprietary:
+
+```
+Copyright (c) 2017 Moslem Ebrahimi
+
+IRANSansDN fonts are considered a proprietary software. To gain information
+about the laws regarding the use of these fonts, please visit www.fontiran.com
+
+This set of fonts are used in this project under the license: (QEGBSK)
+
+THESE FONT FILES MAY NOT BE USED WITHOUT PURCHASING A LICENSE KEY.
 ```

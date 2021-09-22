@@ -859,6 +859,10 @@ video {
   font-family: Trebuchet-MS, sans-serif;
 }
 
+.font-iransansdn {
+  font-family: iransansdn, Vazir, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
