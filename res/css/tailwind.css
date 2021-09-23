@@ -624,6 +624,10 @@ video {
   z-index: 10;
 }
 
+.z-\[-10\] {
+  z-index: -10;
+}
+
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
@@ -635,6 +639,14 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-52 {
+  margin-top: 13rem;
+}
+
+.-mt-3 {
+  margin-top: -0.75rem;
 }
 
 .mt-8 {
@@ -661,6 +673,14 @@ video {
   height: 2048px;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -675,6 +695,14 @@ video {
 
 .w-\[2048px\] {
   width: 2048px;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-6 {
@@ -791,12 +819,29 @@ video {
   align-items: center;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
 .rounded-tl {
   border-top-left-radius: 0.25rem;
+}
+
+.border-\[5px\] {
+  border-width: 5px;
 }
 
 .border-\[3px\] {
@@ -805,6 +850,16 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-\[\#555\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(85, 85, 85, var(--tw-border-opacity));
+}
+
+.border-\[\#353535\] {
+  --tw-border-opacity: 1;
+  border-color: rgba(53, 53, 53, var(--tw-border-opacity));
 }
 
 .border-yellow-300 {
@@ -820,6 +875,16 @@ video {
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+}
+
+.bg-yellow-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+}
+
+.bg-\[\#353535\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(53, 53, 53, var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
@@ -845,6 +910,10 @@ video {
 .py-\[3px\] {
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.pr-52 {
+  padding-right: 13rem;
 }
 
 .text-justify {
@@ -919,6 +988,48 @@ video {
 .fp-tooltip {
   color: #F3F4F6 !important;
   font-family: "Vazir", sans-serif !important;
+}
+
+#hero-front, #hero-back {
+  -webkit-animation: 3s infinite alternate;
+          animation: 3s infinite alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+          animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+#hero-front {
+  transform: rotateX(55deg);
+  -webkit-animation-name: HeroFront;
+          animation-name: HeroFront;
+}
+
+#hero-back {
+  -webkit-animation-name: HeroBack;
+          animation-name: HeroBack;
+}
+
+@-webkit-keyframes HeroFront {
+  to {
+    transform: rotateX(35deg);
+  }
+}
+
+@keyframes HeroFront {
+  to {
+    transform: rotateX(35deg);
+  }
+}
+
+@-webkit-keyframes HeroBack {
+  to {
+    transform: scalex(0.985) scaleY(0.985) translateY(4px);
+  }
+}
+
+@keyframes HeroBack {
+  to {
+    transform: scalex(0.985) scaleY(0.985) translateY(4px);
+  }
 }
 
 .hover\:bg-red-600:hover {
