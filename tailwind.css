@@ -50,3 +50,40 @@
         transform: scalex(0.99) scaleY(0.985) translateY(7px);
     }
 }
+
+#light > div {
+    background-color: #818CF8;
+    border-radius: 9999px;
+    opacity: 0.02;
+    position: absolute;
+    animation: LightPulse 1.5s ease-in-out infinite alternate;
+}
+
+#light > div:nth-child(1) {
+    width: 576px;
+    height: 576px;
+}
+
+#light > div:nth-child(2) {
+    width: 512px;
+    height: 512px;
+    animation-delay: 250ms;
+}
+
+#light > div:nth-child(3) {
+    width: 448px;
+    height: 448px;
+    animation-delay: 500ms;
+}
+
+#light > div:nth-child(4) {
+    width: 384px;
+    height: 384px;
+    animation-delay: 750ms;
+}
+
+@keyframes LightPulse {
+    to {
+        transform: scale(1.03);
+    }
+}
