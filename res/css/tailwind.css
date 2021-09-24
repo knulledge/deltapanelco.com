@@ -1006,16 +1006,6 @@ video {
   font-family: "Vazir", sans-serif !important;
 }
 
-#arrow-top, #arrow-bottom {
-  -webkit-animation: HeroArrow 2s ease-in-out infinite alternate;
-          animation: HeroArrow 2s ease-in-out infinite alternate;
-}
-
-#arrow-top {
-  -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
-}
-
 @-webkit-keyframes HeroArrow {
   to {
     transform: translateY(16px);
@@ -1028,22 +1018,14 @@ video {
   }
 }
 
-#hero-front, #hero-back {
-  -webkit-animation: 3s infinite alternate;
-          animation: 3s infinite alternate;
-  -webkit-animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
-          animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+#arrow-top, #arrow-bottom {
+  -webkit-animation: HeroArrow 2s ease-in-out infinite alternate;
+          animation: HeroArrow 2s ease-in-out infinite alternate;
 }
 
-#hero-front {
-  transform: rotateX(65deg);
-  -webkit-animation-name: HeroFront;
-          animation-name: HeroFront;
-}
-
-#hero-back {
-  -webkit-animation-name: HeroBack;
-          animation-name: HeroBack;
+#arrow-top {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
 }
 
 @-webkit-keyframes HeroFront {
@@ -1067,6 +1049,36 @@ video {
 @keyframes HeroBack {
   to {
     transform: scalex(0.99) scaleY(0.985) translateY(7px);
+  }
+}
+
+#hero-front, #hero-back {
+  -webkit-animation: 3s infinite alternate;
+          animation: 3s infinite alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+          animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+#hero-front {
+  transform: rotateX(65deg);
+  -webkit-animation-name: HeroFront;
+          animation-name: HeroFront;
+}
+
+#hero-back {
+  -webkit-animation-name: HeroBack;
+          animation-name: HeroBack;
+}
+
+@-webkit-keyframes LightPulse {
+  to {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes LightPulse {
+  to {
+    transform: scale(1.03);
   }
 }
 
@@ -1105,15 +1117,9 @@ video {
           animation-delay: 750ms;
 }
 
-@-webkit-keyframes LightPulse {
-  to {
-    transform: scale(1.03);
-  }
-}
-
-@keyframes LightPulse {
-  to {
-    transform: scale(1.03);
+@-moz-document url-prefix() {
+  #light {
+    margin-right: 176px;
   }
 }
 

@@ -11,6 +11,12 @@
     font-family: "Vazir", sans-serif !important;
 }
 
+@keyframes HeroArrow {
+    to {
+        transform: translateY(16px);
+    }
+}
+
 #arrow-top, #arrow-bottom {
     animation: HeroArrow 2s ease-in-out infinite alternate;
 }
@@ -19,9 +25,15 @@
     animation-delay: 250ms;
 }
 
-@keyframes HeroArrow {
+@keyframes HeroFront {
     to {
-        transform: translateY(16px);
+        transform: rotateX(45deg);
+    }
+}
+
+@keyframes HeroBack {
+    to {
+        transform: scalex(0.99) scaleY(0.985) translateY(7px);
     }
 }
 
@@ -39,15 +51,9 @@
     animation-name: HeroBack;
 }
 
-@keyframes HeroFront {
+@keyframes LightPulse {
     to {
-        transform: rotateX(45deg);
-    }
-}
-
-@keyframes HeroBack {
-    to {
-        transform: scalex(0.99) scaleY(0.985) translateY(7px);
+        transform: scale(1.03);
     }
 }
 
@@ -82,8 +88,8 @@
     animation-delay: 750ms;
 }
 
-@keyframes LightPulse {
-    to {
-        transform: scale(1.03);
+@-moz-document url-prefix() {
+    #light {
+        margin-right: 176px;
     }
 }
