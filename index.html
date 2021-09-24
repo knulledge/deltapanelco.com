@@ -29,15 +29,17 @@
 </head>
 
 <body class="font-sans text-gray-100 bg-red-500">
+  <!--* Top Heading -->
   <a class="absolute z-10 top-6 left-6" href="https://deltapanelco.com">
     <h2 class="text-3xl font-semibold font-trebuchet-ms">&Delta; Delta Panel</h2>
   </a>
+  <!--* Top Heading End -->
 
   <!--* Wave -->
   <div class="grid grid-cols-8">
     <div class="col-span-5" dir="rtl">
-      <object data="res/svg/wave.svg" type="image/svg+xml"
-        class="w-[2048px] h-[2048px] absolute top-[-44vh] animate-wave select-none"></object>
+      <object class="w-[2048px] h-[2048px] absolute top-[-44vh] animate-wave select-none" data="res/svg/wave.svg"
+        type="image/svg+xml"></object>
     </div>
   </div>
   <!--* Wave End -->
@@ -48,7 +50,16 @@
     <section class="section">
       <div class="grid items-center grid-cols-8">
         <!--* Left Column -->
-        <div class="grid items-center col-span-5 mt-52 pr-52 justify-items-center">
+        <div class="grid items-center col-span-5 pr-52 justify-items-center">
+          <!--* Arrow -->
+          <div class="grid mb-8 justify-items-center">
+            <object class="-mb-16 pointer-events-none select-none w-28" data="res/svg/arrow-top.svg"
+              type="image/svg+xml"></object>
+            <object class="pointer-events-none select-none w-60" data="res/svg/arrow-bottom.svg"
+              type="image/svg+xml"></object>
+          </div>
+          <!--* Arrow End -->
+
           <!--* Panel -->
           <div class="grid justify-items-center" style=" perspective: 256px;">
             <div id="hero-front" class="h-10 bg-yellow-300 border-[5px] border-[#555] w-96 rounded-xl">
