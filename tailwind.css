@@ -47,6 +47,6 @@
 
 @keyframes HeroBack {
     to {
-        transform: scalex(0.985) scaleY(0.985) translateY(7px);
+        transform: scalex(0.99) scaleY(0.985) translateY(7px);
     }
 }
