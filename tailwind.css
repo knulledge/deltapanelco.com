@@ -17,7 +17,7 @@
 }
 
 #hero-front {
-    transform: rotateX(55deg);
+    transform: rotateX(65deg);
     animation-name: HeroFront;
 }
 
@@ -27,12 +27,12 @@
 
 @keyframes HeroFront {
     to {
-        transform: rotateX(35deg);
+        transform: rotateX(45deg);
     }
 }
 
 @keyframes HeroBack {
     to {
-        transform: scalex(0.985) scaleY(0.985) translateY(4px);
+        transform: scalex(0.985) scaleY(0.985) translateY(7px);
     }
 }

@@ -653,8 +653,8 @@ video {
   margin-bottom: -4rem;
 }
 
-.-mt-3 {
-  margin-top: -0.75rem;
+.-mt-5 {
+  margin-top: -1.25rem;
 }
 
 .mt-8 {
@@ -681,8 +681,8 @@ video {
   height: 2048px;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-8 {
@@ -713,12 +713,12 @@ video {
   width: 15rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-\[448px\] {
+  width: 448px;
 }
 
-.w-\[400px\] {
-  width: 400px;
+.w-\[474px\] {
+  width: 474px;
 }
 
 .w-6 {
@@ -928,8 +928,8 @@ video {
   padding-bottom: 3px;
 }
 
-.pr-52 {
-  padding-right: 13rem;
+.pr-44 {
+  padding-right: 11rem;
 }
 
 .text-justify {
@@ -1014,7 +1014,7 @@ video {
 }
 
 #hero-front {
-  transform: rotateX(55deg);
+  transform: rotateX(65deg);
   -webkit-animation-name: HeroFront;
           animation-name: HeroFront;
 }
@@ -1026,25 +1026,25 @@ video {
 
 @-webkit-keyframes HeroFront {
   to {
-    transform: rotateX(35deg);
+    transform: rotateX(45deg);
   }
 }
 
 @keyframes HeroFront {
   to {
-    transform: rotateX(35deg);
+    transform: rotateX(45deg);
   }
 }
 
 @-webkit-keyframes HeroBack {
   to {
-    transform: scalex(0.985) scaleY(0.985) translateY(4px);
+    transform: scalex(0.985) scaleY(0.985) translateY(7px);
   }
 }
 
 @keyframes HeroBack {
   to {
-    transform: scalex(0.985) scaleY(0.985) translateY(4px);
+    transform: scalex(0.985) scaleY(0.985) translateY(7px);
   }
 }
 
