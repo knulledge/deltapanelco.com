@@ -11,6 +11,20 @@
     font-family: "Vazir", sans-serif !important;
 }
 
+#arrow-top, #arrow-bottom {
+    animation: HeroArrow 2s ease-in-out infinite alternate;
+}
+
+#arrow-top {
+    animation-delay: 250ms;
+}
+
+@keyframes HeroArrow {
+    to {
+        transform: translateY(16px);
+    }
+}
+
 #hero-front, #hero-back {
     animation: 3s infinite alternate;
     animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);

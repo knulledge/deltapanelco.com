@@ -645,12 +645,12 @@ video {
   margin-right: auto;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
-.-mb-16 {
-  margin-bottom: -4rem;
+.-mb-14 {
+  margin-bottom: -3.5rem;
 }
 
 .-mt-5 {
@@ -705,12 +705,12 @@ video {
   width: 2048px;
 }
 
-.w-28 {
-  width: 7rem;
+.w-24 {
+  width: 6rem;
 }
 
-.w-60 {
-  width: 15rem;
+.w-52 {
+  width: 13rem;
 }
 
 .w-\[448px\] {
@@ -1004,6 +1004,28 @@ video {
 .fp-tooltip {
   color: #F3F4F6 !important;
   font-family: "Vazir", sans-serif !important;
+}
+
+#arrow-top, #arrow-bottom {
+  -webkit-animation: HeroArrow 2s ease-in-out infinite alternate;
+          animation: HeroArrow 2s ease-in-out infinite alternate;
+}
+
+#arrow-top {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+@-webkit-keyframes HeroArrow {
+  to {
+    transform: translateY(16px);
+  }
+}
+
+@keyframes HeroArrow {
+  to {
+    transform: translateY(16px);
+  }
 }
 
 #hero-front, #hero-back {
