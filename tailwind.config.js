@@ -1,7 +1,8 @@
 module.exports = {
   mode: 'jit',
   purge: [
-    './*.html'
+    './*.html',
+    'tailwind.config.js',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -35,7 +36,7 @@ module.exports = {
             'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)'
           }
         }
-      }
+      },
     },
   },
   variants: {
