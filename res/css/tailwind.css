@@ -734,6 +734,10 @@ video {
   font-family: Vazir, sans-serif;
 }
 
+.font-nunito {
+  font-family: Nunito, sans-serif;
+}
+
 .font-iransansdn {
   font-family: iransansdn, Vazir, sans-serif;
 }
@@ -751,6 +755,14 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .leading-loose {

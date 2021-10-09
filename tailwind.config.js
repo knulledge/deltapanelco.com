@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         'vazir': ['Vazir', 'sans-serif'],
         'iransansdn': ['iransansdn', 'Vazir', 'sans-serif'],
+        'nunito': ['Nunito', 'sans-serif'],
       },
       animation: {
         indicator: 'indicator 1s infinite',
