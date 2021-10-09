@@ -24,7 +24,7 @@
 
 <body class="bg-gray-200 font-vazir" dir="rtl">
 
-  <header class="relative h-screen flex flex-col items-center p-6"
+  <header class="relative h-screen min-h-[24rem] flex flex-col items-center p-6"
     style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./res/img/header.jpg);
       background-size: cover; background-position: 30%;">
 
@@ -34,15 +34,18 @@
     </h2>
     <!--* Top Heading End -->
 
-    <div class="m-auto">
+    <div class="m-auto
+      lg:w-[50rem]">
       <!--* Main Heading -->
-      <h1 class="font-iransansdn text-center text-7xl text-gray-100" style="word-spacing: -1rem;">
+      <h1 class="font-iransansdn text-center text-7xl text-gray-100
+        sm:text-8xl" style="word-spacing: -1rem;">
         دلتا پنل
       </h1>
       <!--* Main Heading End -->
 
       <!--* Main Heading Description -->
-      <p class="mt-5 text-gray-400 text-center leading-loose">
+      <p class="mt-5 text-gray-400 text-center leading-loose
+        sm:text-lg sm:mt-6">
         گروه دلتا پنل با تکیه بر دانش متخصصین کارآزموده خود در عرصه طراحی و تولید انواع پنل‌ها و دگمه‌های آسانسور مبتنی
         بر دانش روز جهانی و با بهره‌گیری از آخرین متدها، خدمت گزار مشتریان خواهد بود.
       </p>
@@ -51,11 +54,13 @@
       <!--* CTA Buttons -->
       <div class="text-center mt-4">
         <a class="inline-block w-32 font-iransansdn rounded-full transition-colors ease-linear ml-2
-          py-2 border-red-500 border-4 hover:border-red-600 hover:bg-[#00000080] hover:text-red-600 text-red-500">
+          py-2 border-red-500 border-4 hover:border-red-600 hover:bg-[#00000080] hover:text-red-600 text-red-500
+          sm:w-44 sm:ml-4" href="#">
           دانلود کاتالوگ
         </a>
         <a class="inline-block w-32 font-iransansdn rounded-full transition-colors ease-linear
-          py-3 bg-red-500 hover:bg-red-600 text-gray-100">
+          py-3 bg-red-500 hover:bg-red-600 text-gray-100
+          sm:w-44" href="#">
           تماس با ما
         </a>
       </div>
@@ -63,7 +68,8 @@
     </div>
 
     <!--* Navigation Links -->
-    <div class="absolute bottom-0 p-[inherit] grid grid-cols-3 text-gray-100 gap-x-2 gap-y-4 text-center text-sm">
+    <div class="absolute bottom-0 p-[inherit] grid grid-cols-3 text-gray-100 gap-x-2 gap-y-4 text-center text-sm
+      sm:grid-flow-col sm:grid-cols-[min-content] sm:whitespace-nowrap sm:gap-6">
       <a href="#">صفحه اصلی</a>
       <a href="#">پنل طبقات</a>
       <a href="#">پنل داخل کابین</a>
