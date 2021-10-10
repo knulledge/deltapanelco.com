@@ -823,8 +823,12 @@ video {
   justify-content: center;
 }
 
-.gap-12 {
-  gap: 3rem;
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-2 {
@@ -1085,6 +1089,11 @@ video {
   .sm\:grid-cols-\[1fr\2c min-content\] {
     grid-template-columns: 1fr -webkit-min-content;
     grid-template-columns: 1fr min-content;
+  }
+
+  .sm\:grid-cols-\[min-content\2c 1fr\] {
+    grid-template-columns: -webkit-min-content 1fr;
+    grid-template-columns: min-content 1fr;
   }
 
   .sm\:items-center {
