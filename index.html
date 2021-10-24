@@ -107,22 +107,26 @@
         <div class="relative w-52 h-72 mx-auto bg-gray-300 rounded-3xl">
           <div class="w-[72px] h-64 mx-auto -mt-8" style="perspective: 1000px;">
 
-            <div class="absolute -left-1 top-[-1px] w-5 h-[258px] bg-gradient-to-b from-[#555] to-[#262626] rounded-lg">
+            <div id="back-fp"
+              class="absolute -left-1 top-[-1px] w-5 h-[258px] bg-gradient-to-b from-[#3f3f3f] to-[#262626] rounded-lg">
             </div>
 
-            <div class="absolute w-[72px] h-64 bg-[#19191E] rounded-lg overflow-hidden"
+            <div id="front-fp" class="absolute w-[72px] h-64 bg-[#19191E] rounded-lg overflow-hidden"
               style="transform: rotateY(20deg);outline: 1px solid transparent;">
-              <div class="absolute z-[-1] -top-6 left-9 w-20 h-72 bg-[#121314] -rotate-6"></div>
+              <div id="shadow-fp" class="absolute z-[-1] -top-6 left-11 w-20 h-72 bg-[#121314] -rotate-6"></div>
               <div class="absolute z-10 bottom-0 w-[72px] h-[120px] bg-[#E6C576] rounded-b-lg
                   border-[3px] border-[#19191E] overflow-hidden">
-                <div class="absolute z-[-1] top-[-8.5rem] left-9 w-20 h-72 bg-[#DFB661] -rotate-6"></div>
-                <div style="background-image: radial-gradient(farthest-corner at 0px 14px, #B87129 0%, #724A2F 75%);"
-                  class="absolute w-[26px] h-[26px] z-[-2] left-[18px] top-[36px] rounded-full">
+                <div id="shadow-fp" class="absolute z-[-10] top-[-8.5rem] left-11 w-20 h-72 bg-[#DFB661] -rotate-6">
                 </div>
-                <div style="background-image: radial-gradient(farthest-corner at 0px 14px, #EFB959 0%, #B87129 75%);"
+                <div style="background-image: radial-gradient(farthest-corner at 0px 14px, #B87129 0%, #724A2F 75%);"
+                  class="absolute w-[27px] h-[26px] z-[-2] left-[18px] top-[36px] rounded-full scale-y-[1.01]">
+                </div>
+                <div id="button-fp"
+                  style="background-image: radial-gradient(farthest-corner at 0px 14px, #EFB959 0%, #B87129 75%);"
                   class="absolute w-[26px] h-[26px] z-[-1] left-[20px] top-[36px] rounded-full">
                 </div>
-                <div class="absolute w-5 h-5 bg-[#E6C576] border-2 border-[#FFBDF7] rounded-full top-[39px] left-6">
+                <div id="button-fp"
+                  class="absolute w-5 h-5 bg-[#E6C576] border-2 border-[#FFBDF7] rounded-full top-[39px] left-6">
                 </div>
               </div>
             </div>

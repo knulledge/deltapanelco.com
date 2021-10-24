@@ -17,3 +17,43 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #DC2626;
 }
+
+#front-fp {
+    animation: fp-front 2s infinite alternate ease-in-out;
+}
+
+#back-fp {
+    animation: fp-back 2s infinite alternate ease-in-out;
+}
+
+#shadow-fp {
+    animation: fp-shadow 2s infinite alternate ease-in-out;
+}
+
+#button-fp {
+    animation: fp-button 2s infinite alternate ease-in-out;
+}
+
+@keyframes fp-front {
+    100% {
+        transform: rotateY(40deg);
+    }
+}
+
+@keyframes fp-back {
+    100% {
+        transform: translateX(4px) scaleY(1.01);
+    }
+}
+
+@keyframes fp-shadow {
+    100% {
+        left: 34px;
+    }
+}
+
+@keyframes fp-button {
+    100% {
+        transform: translateX(2px);
+    }
+}
