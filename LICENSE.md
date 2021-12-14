@@ -4,7 +4,7 @@
 ```
 MIT License
 
-Copyright (c) 2021 Aitchex
+Copyright (c) 2021 Mohammad Danesh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
