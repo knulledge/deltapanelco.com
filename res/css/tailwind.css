@@ -623,6 +623,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 18rem;
 }
 
+.h-\[34rem\] {
+  height: 34rem;
+}
+
 .min-h-\[28rem\] {
   min-height: 28rem;
 }

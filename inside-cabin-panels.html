@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>پنل داخل کابین دلتا پنل</title>
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazir-font@29.1.0/dist/font-face.css"
+    integrity="sha256-xNqufdRoNdliwXjA7tozAyu+HW6VkBsK8/idbGwiIjg=" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="res/font/iransansdn/fontiran.css">
+
+  <!-- style -->
+  <link rel="stylesheet" href="res/css/tailwind.css">
+</head>
+
+<body class="bg-gray-100 text-gray-700 font-vazir">
+
+  <nav class="m-4 px-4 grid grid-cols-[2rem,max-content,2rem] items-center justify-between h-16
+    rounded-full whitespace-nowrap bg-gray-700 shadow-lg
+    md:sticky md:top-4 md:z-[999] md:grid-cols-none md:grid-flow-col
+    lg:px-8 lg:m-8">
+    <button class="text-white md:hidden" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <h2 class="font-bold text-3xl text-white font-iransansdn
+      md:text-2xl lg:text-3xl" style="word-spacing: -0.15rem;">
+      <a href="/">
+        دلتا پنل
+      </a>
+    </h2>
+
+    <div class="hidden text-white text-sm
+      md:grid md:grid-flow-col md:gap-6
+      lg:text-base lg:gap-8">
+      <a href="/">صفحه اصلی</a>
+      <a href="/floors-panels.html">پنل طبقات</a>
+      <a href="/inside-cabin-panels.html">پنل داخل کابین</a>
+      <a href="#">نمایشگر</a>
+      <a href="#">دکمه</a>
+      <a href="#">تماس با ما</a>
+    </div>
+
+    <div class="hidden text-white md:flex md:items-center">
+      <p class="font-nunito ml-2 text-sm lg:text-base">
+        77295032
+      </p>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502
+          1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0
+          011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+      </svg>
+    </div>
+
+    <div id="menu-background" class="opacity-0 fixed top-0 right-0 z-[9998] pointer-events-none
+      w-screen h-screen bg-black transition-opacity ease-linear duration-500 md:hidden" onclick="toggleMenu()">
+    </div>
+
+    <div id="menu" class="opacity-0 fixed top-0 right-0 translate-x-[75vw] z-[9999] h-screen w-[75vw] p-4
+      transition-transform duration-500 bg-white overflow-y-auto md:hidden">
+      <h2 class="text-3xl text-red-500 font-iransansdn font-bold text-center" style="word-spacing: -0.15rem;">
+        <a href="/">
+          دلتا پنل
+        </a>
+      </h2>
+
+      <button class="absolute top-4 left-4 p-0.5 text-gray-700" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="mt-6 flex items-center">
+        <h3 class="inline-block ml-2 whitespace-nowrap text-lg font-iransansdn font-bold">
+          <a href="/" class="text-gray-700">
+            صفحه اصلی
+          </a>
+        </h3>
+        <hr class="w-full border-gray-300">
+      </div>
+
+      <div class="mt-4 flex items-center">
+        <h3 class="inline-block ml-2 whitespace-nowrap text-lg font-iransansdn font-bold">
+          <a href="/floors-panels.html" class="text-gray-700">
+            پنل طبقات
+          </a>
+        </h3>
+        <hr class="w-full border-gray-300">
+      </div>
+
+      <div class="mt-4 flex items-center">
+        <h3 class="inline-block ml-2 whitespace-nowrap text-lg font-iransansdn font-bold">
+          <a href="/inside-cabin-panels.html" class="text-gray-700">
+            پنل داخل کابین
+          </a>
+        </h3>
+        <hr class="w-full border-gray-300">
+      </div>
+
+      <div class="mt-4 flex items-center">
+        <h3 class="inline-block ml-2 whitespace-nowrap text-lg font-iransansdn font-bold">
+          <a href="#" class="text-gray-700">
+            نمایشگر
+          </a>
+        </h3>
+        <hr class="w-full border-gray-300">
+      </div>
+
+      <div class="mt-4 flex items-center">
+        <h3 class="inline-block ml-2 whitespace-nowrap text-lg font-iransansdn font-bold">
+          <a href="#" class="text-gray-700">
+            دکمه
+          </a>
+        </h3>
+        <hr class="w-full border-gray-300">
+      </div>
+
+      <div class="mt-4 flex items-center">
+        <h3 class="inline-block ml-2 whitespace-nowrap text-lg font-iransansdn font-bold">
+          <a href="#" class="text-gray-700">
+            تماس با ما
+          </a>
+        </h3>
+        <hr class="w-full border-gray-300">
+      </div>
+    </div>
+  </nav>
+
+  <section class="px-4 grid gap-4
+    lg:px-16 lg:gap-8 lg:grid-cols-2">
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[28rem]" src="res/img/cabin-panel/d-16.jpg" alt="D-16">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-16</h2>
+      <p class="text-lg" dir="ltr">118cm * 24cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[28rem]" src="res/img/cabin-panel/d-15.jpg" alt="D-15">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-15</h2>
+      <p class="text-lg" dir="ltr">118cm * 24cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[28rem]" src="res/img/cabin-panel/d-14.jpg" alt="D-14">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-14</h2>
+      <p class="text-lg" dir="ltr">118cm * 19cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[28rem]" src="res/img/cabin-panel/d-13.jpg" alt="D-13">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-13</h2>
+      <p class="text-lg" dir="ltr">100cm * 19cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[28rem]" src="res/img/cabin-panel/d-12.jpg" alt="D-12">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-12</h2>
+      <p class="text-lg" dir="ltr">200cm * 19cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[28rem]" src="res/img/cabin-panel/d-11.jpg" alt="D-11">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-11</h2>
+      <p class="text-lg" dir="ltr">200cm * 19cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-40.jpg" alt="D-40">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-40</h2>
+      <p class="text-lg" dir="ltr">200cm * 25cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-39.jpg" alt="D-39">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-39</h2>
+      <p class="text-lg" dir="ltr">180cm * 49cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت توکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-38.jpg" alt="D-38">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-38</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-37.jpg" alt="D-37">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-37</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-36.jpg" alt="D-36">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-36</h2>
+      <p class="text-lg" dir="ltr">200cm * 35cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-35.jpg" alt="D-35">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-35</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-34.jpg" alt="D-34">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-34</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-33.jpg" alt="D-33">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-33</h2>
+      <p class="text-lg" dir="ltr">200cm * 25cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-32.jpg" alt="D-32">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-32</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-31.jpg" alt="D-31">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-31</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg" dir="ltr">190cm * 26cm<span> باکس</span></p>
+      <p class="text-lg">نصب به صورت توکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-30.jpg" alt="D-30">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-30</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-29.jpg" alt="D-29">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-29</h2>
+      <p class="text-lg" dir="ltr">200cm * 25cm<span> ابعاد</span></p>
+      <p class="text-lg" dir="ltr">190cm * 22cm<span> باکس</span></p>
+      <p class="text-lg">نصب به صورت توکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-28.jpg" alt="D-28">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-28</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-27.jpg" alt="D-27">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-27</h2>
+      <p class="text-lg" dir="ltr">200cm * 30cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-26.jpg" alt="D-26">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-26</h2>
+      <p class="text-lg" dir="ltr">200cm * 26cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-25.jpg" alt="D-25">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-25</h2>
+      <p class="text-lg" dir="ltr">200cm * 29cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-24.jpg" alt="D-24">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-24</h2>
+      <p class="text-lg" dir="ltr">200cm * 25cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-23.jpg" alt="D-23">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-23</h2>
+      <p class="text-lg" dir="ltr">200cm * 26cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-22.jpg" alt="D-22">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-22</h2>
+      <p class="text-lg" dir="ltr">200cm * 19cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+    <section class="p-4 bg-white shadow-lg rounded-3xl text-center">
+      <div class="mx-auto w-fit">
+        <img class="h-[34rem]" src="res/img/cabin-panel/d-21.jpg" alt="D-21">
+      </div>
+      <h2 class="my-2 font-bold text-xl font-nunito">D-21</h2>
+      <p class="text-lg" dir="ltr">200cm * 19cm<span> ابعاد</span></p>
+      <p class="text-lg">نصب به صورت روکار</p>
+    </section>
+
+  </section>
+
+  <footer class="p-8 mt-4 lg:mt-16 bg-gray-700">
+    <div class="grid grid-cols-3 gap-x-2 gap-y-4 justify-center text-white text-center text-sm
+      sm:grid-flow-col sm:grid-cols-[min-content] sm:gap-6 sm:whitespace-nowrap">
+      <a href="/">صفحه اصلی</a>
+      <a href="/floors-panels.html">پنل طبقات</a>
+      <a href="/inside-cabin-panels.html">پنل داخل کابین</a>
+      <a href="#">نمایشگر</a>
+      <a href="#">دکمه</a>
+      <a href="#">تماس با ما</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
+<script>
+  var menu = document.getElementById("menu");
+  var menuBackground = document.getElementById("menu-background");
+
+  function toggleMenu() {
+    menu.classList.remove("opacity-0");
+    menu.classList.toggle("translate-x-[75vw]");
+
+    setTimeout(() => {
+      if (menu.classList.contains("translate-x-[75vw]"))
+        menu.classList.add("opacity-0");
+    }, 500);
+
+    menuBackground.classList.toggle("opacity-0");
+    menuBackground.classList.toggle("opacity-50");
+    menuBackground.classList.toggle("pointer-events-none");
+  }
+</script>
