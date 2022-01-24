@@ -57,3 +57,7 @@
         transform: translateX(2px);
     }
 }
+
+a {
+    @apply transition-colors ease-linear hover:text-red-500;
+}
