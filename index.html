@@ -29,7 +29,7 @@
     class="relative h-screen min-h-[28rem] flex flex-col items-center p-6">
 
     <!--* Top Heading -->
-    <h2 class="absolute self-end font-nunito text-3xl text-gray-100">
+    <h2 class="absolute self-end font-nunito text-3xl text-white">
       <span class="text-red-500">&Delta;</span> Delta Panel
     </h2>
     <!--* Top Heading End -->
@@ -37,7 +37,7 @@
     <div class="m-auto
       lg:w-[50rem]">
       <!--* Main Heading -->
-      <h1 class="font-iransansdn text-center text-7xl text-gray-100
+      <h1 class="font-iransansdn text-center text-7xl text-white
         sm:text-8xl" style="word-spacing: -1rem;">
         دلتا پنل
       </h1>
@@ -59,7 +59,7 @@
           دانلود کاتالوگ
         </a>
         <a class="inline-block w-32 font-iransansdn rounded-full transition-colors ease-linear
-          py-3 bg-red-500 hover:bg-red-600 text-gray-100
+          py-3 bg-red-500 hover:bg-red-600 text-white hover:text-white
           sm:w-44" href="#contact-us">
           تماس با ما
         </a>
@@ -68,28 +68,30 @@
     </div>
 
     <!--* Navigation Links -->
-    <nav class="absolute bottom-0 p-[inherit] grid grid-cols-3 text-gray-100 gap-x-2 gap-y-4 text-center text-sm
+    <nav class="absolute bottom-0 p-[inherit] grid grid-cols-3 text-white gap-x-2 gap-y-4 text-center text-sm
       sm:grid-flow-col sm:grid-cols-[min-content] sm:whitespace-nowrap sm:gap-6">
-      <a href="/">صفحه اصلی</a>
+      <a href="/index.html">صفحه اصلی</a>
       <a href="/floors-panels.html">پنل طبقات</a>
       <a href="/inside-cabin-panels.html">پنل داخل کابین</a>
-      <a href="#">نمایشگر</a>
-      <a href="#">دکمه</a>
+      <a href="#panel-screen">نمایشگر</a>
+      <a href="#panel-button">دکمه</a>
       <a href="#contact-us">تماس با ما</a>
     </nav>
     <!--* Navigation Links End -->
 
     <!--* Scroll Indicator -->
-    <a class="hidden absolute w-4 h-9 border-2 border-gray-100 rounded-full rounded-tl py-[3px] bottom-6 left-6
+    <a class="hidden absolute w-4 h-9 border-2 border-white rounded-full rounded-tl py-[3px] bottom-6 left-6
       sm:block" href="#products">
-      <div class="w-2 h-2 mx-auto bg-gray-100 rounded-full animate-indicator"></div>
+      <div class="w-2 h-2 mx-auto bg-white rounded-full animate-indicator"></div>
     </a>
     <!--* Scroll Indicator End -->
 
   </header>
 
   <!--* Products Section -->
-  <section id="products" class="mt-12 px-4">
+  <section class="mt-12 px-4 relative">
+    <a id="products" class="absolute -top-12"></a>
+
     <!--* Products Heading -->
     <h4 class="text-3xl text-center font-iransansdn">محصولات ما</h4>
     <hr class="w-52 mx-auto mt-3 border-2 bg-red-500 border-red-500 rounded-full">
@@ -111,8 +113,7 @@
         <div class="sm:order-first">
           <h2 class="font-iransansdn text-xl text-red-500">پنل طبقات</h2>
           <h3 class="mt-1 text-2xl leading-normal">
-            یه توضیح مفید مختصر یه جمله ای
-            در مورد پنل طبقات دلتا پنل
+            زیبایی مهمترین عنصر طراحی پنل‌های طبقات دلتا پنل است
           </h3>
           <p class="mt-2 text-lg text-justify text-gray-500 leading-loose">
             زیبایی مهمترین عنصر طراحی پنل‌های طبقات برای آسانسور است؛ چرا که در معرض دید عموم قرار دارد و بایستی که
@@ -143,15 +144,14 @@
         <div>
           <h2 class="font-iransansdn text-xl text-red-500">پنل داخل کابین</h2>
           <h3 class="mt-1 text-2xl leading-normal">
-            یه توضیح مفید مختصر یه جمله ای
-            در مورد پنل داخل کابین دلتا پنل
+            ظرافت در طراحی و تولید وجه تمایز ارائه خدمات دلتا پنل است
           </h3>
           <p class="mt-2 text-lg text-justify text-gray-500 leading-loose">
             ظرافت در طراحی و استفاده از بهترین مواد اولیه در تولید وجه تمایز ارائه خدمات دلتا پنل است. تخصص کارشناسان
             دلتا پنل در جانمایی پنل‌های داخل کابین آسانسور توانسته رضایت مشتریان را به همراه داشته باشد.
           </p>
           <a class="inline-block mt-4 px-6 py-3 font-iransansdn text-white rounded-full
-            transition-colors ease-linear bg-red-500 hover:bg-red-600" href="#">
+            transition-colors ease-linear bg-red-500 hover:bg-red-600" href="/inside-cabin-panels.html">
             مشاهده محصولات
             <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-4 h-6 w-6 animate-arrow" fill="none"
               viewBox="0 0 24 24" stroke="currentColor">
@@ -164,9 +164,11 @@
       <!--* Cabin Panel End -->
 
       <!--* Panel Screen -->
-      <section class="grid gap-8
+      <section class="grid gap-8 relative
         sm:grid-cols-[1fr,min-content] sm:items-center
         lg:max-w-[64rem] lg:gap-28">
+
+        <a id="panel-screen" class="absolute -top-16"></a>
 
         <div class="relative w-52 h-72 mx-auto bg-gray-200 rounded-3xl">
           <img class="w-24 absolute -top-10 left-1/2 -translate-x-1/2" src="res/img/di.png" alt="">
@@ -175,53 +177,53 @@
         <div class="sm:order-first">
           <h2 class="font-iransansdn text-xl text-red-500">نمایشگر</h2>
           <h3 class="mt-1 text-2xl leading-normal">
-            یه توضیح مفید مختصر یه جمله ای
-            در مورد نمایشگر دلتا پنل
+            نمایشگر با کیفیت جهت ارتقا جلوه‌ی آسانسور بسیار حائز اهمیت است
           </h3>
           <p class="mt-2 text-lg text-justify text-gray-500 leading-loose">
             استفاده از نمایشگر با کیفیت مناسب جهت ارتقا جلوه‌ی داخل آسانسور بسیار حائز اهمیت است و کیفیت مکمل کارایی در
             این آیتم خواهد بود و هیچ کدام به تنهایی کافی نخواهند بود. مشاهده نمایشگرهای قابل استفاده و مناسب طراحی‌های
             دلتا پنل می‌تواند به انتخاب شما کمک کند.
           </p>
-          <a class="inline-block mt-4 px-6 py-3 font-iransansdn text-white rounded-full
+          <!-- <a class="inline-block mt-4 px-6 py-3 font-iransansdn text-white rounded-full
             transition-colors ease-linear bg-red-500 hover:bg-red-600" href="#">
             مشاهده محصولات
             <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-4 h-6 w-6 animate-arrow" fill="none"
               viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
             </svg>
-          </a>
+          </a> -->
         </div>
 
       </section>
       <!--* Panel Screen End -->
 
       <!--* Panel Button -->
-      <section class="grid gap-8
+      <section class="grid gap-8 relative
         sm:grid-cols-[min-content,1fr] sm:items-center
         lg:max-w-[64rem] lg:gap-28">
+
+        <a id="panel-button" class="absolute -top-16"></a>
 
         <div class="relative w-52 h-72 mx-auto bg-gray-200 rounded-3xl"></div>
 
         <div>
           <h2 class="font-iransansdn text-xl text-red-500">دکمه</h2>
           <h3 class="mt-1 text-2xl leading-normal">
-            یه توضیح مفید مختصر یه جمله ای
-            در مورد دکمه دلتا پنل
+            حفظ کارکرد طولانی مدت از اصلی‌ترین موارد دکمه‌های دلتا پنل است
           </h3>
           <p class="mt-2 text-lg text-justify text-gray-500 leading-loose">
             حفظ کارکرد طولانی مدت در کنار ظاهری مناسب از اصلی‌ترین موارد دکمه‌های آسانسور است که رعایت نشدن آن به شدت
             داخل اتاقک آسانسور را با تمام زیبایی‌هایش به چالش خواهد کشید. دلتا پنل پاسخگوی این نیاز بازار مصرف بوده و
             مفتخر است که در ارائه این محصولات پیشگام است.
           </p>
-          <a class="inline-block mt-4 px-6 py-3 font-iransansdn text-white rounded-full
+          <!-- <a class="inline-block mt-4 px-6 py-3 font-iransansdn text-white rounded-full
             transition-colors ease-linear bg-red-500 hover:bg-red-600" href="#">
             مشاهده محصولات
             <svg xmlns="http://www.w3.org/2000/svg" class="inline-block mr-4 h-6 w-6 animate-arrow" fill="none"
               viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
             </svg>
-          </a>
+          </a> -->
         </div>
 
       </section>
@@ -234,7 +236,7 @@
   <!--* Products Section End -->
 
   <!--* Contact Us -->
-  <section class="mt-24 mx-4 p-4 bg-gray-200 rounded-3xl relative
+  <section class="mt-24 mb-12 mx-4 p-4 bg-gray-200 rounded-3xl relative
     sm:p-8  
     md:max-w-[46rem] md:mx-auto">
     <a id="contact-us" class="absolute -top-8"></a>
@@ -264,7 +266,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
         </svg>
-        <h3 class="ml-2 text-lg text-gray-600">77295032 - 77295271</h3>
+        <h3 class="ml-2 text-lg text-gray-600"><span class="text-sm">(021) </span>77295032 - 77295271</h3>
       </div>
 
       <div class="flex mt-4 font-nunito" dir="ltr">
@@ -304,8 +306,8 @@
       <a href="/">صفحه اصلی</a>
       <a href="/floors-panels.html">پنل طبقات</a>
       <a href="/inside-cabin-panels.html">پنل داخل کابین</a>
-      <a href="#">نمایشگر</a>
-      <a href="#">دکمه</a>
+      <a href="#panel-screen">نمایشگر</a>
+      <a href="#panel-button">دکمه</a>
       <a href="#contact-us">تماس با ما</a>
     </div>
   </footer>
